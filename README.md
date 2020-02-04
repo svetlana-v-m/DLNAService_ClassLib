@@ -16,5 +16,4 @@ To start working with one of the found DLNA devices it is necessary to choose it
 DLNADevice selectedDevice=new DLNADevice(client.DLNADevices[indexOfSelectedDevice]); .
 
 To browse in selectedDevice content: selectedDevice.GetDeviceContent("0") - for root ets. =>returns List<DLNAObject>
-
 To get filemetadata: selectedDevice.GetFileInfo("file ID ") => returns DLNAFile
