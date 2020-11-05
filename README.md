@@ -1,4 +1,9 @@
 # DLNAService_ClassLib
+
+Библиотека позволяет работать с медиаконтентом (фото, видео, аудио), расположенным в локальной сети по протоколу DLNA:
+1. Поиск устройств в локальной сети, поддерживающих протокол DLNA.
+2. Просмотр медиаконтента, расположенного на выбранном устройстве из найденных: перечень файлов, просмотр видео/фото, прослушивание аудио.
+
 ## Classes:
 1.    DLNAClient
 2.    DLNADevice
@@ -10,9 +15,9 @@
 **Start asynchronous searching for DLNADevices:** 
 
 `DLNAClient client=new DLNAClient(); client.StartSearchingForDevices();`
-
+Send message to all devices in local network and get the answer from them.
 **Stop searching:** 
-
+Interrupt sending messages/waiting for the answer from the DLNA devices.
 `client.StopSearchingForDevices();`
 
 If DLNA device found it is added to ObservableCollection<DLNADevice> DLNADevices in DLNAClient class.
