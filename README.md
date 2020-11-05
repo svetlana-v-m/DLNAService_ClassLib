@@ -15,7 +15,9 @@
 **Start asynchronous searching for DLNADevices:** 
 
 `DLNAClient client=new DLNAClient(); client.StartSearchingForDevices();`
+
 Send message to all devices in local network and get the answer from them.
+
 **Stop searching:** 
 Interrupt sending messages/waiting for the answer from the DLNA devices.
 `client.StopSearchingForDevices();`
